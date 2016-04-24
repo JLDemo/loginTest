@@ -16,6 +16,8 @@
 		043A123D1CCCA870007696BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 043A123B1CCCA870007696BD /* LaunchScreen.storyboard */; };
 		043A12481CCCA871007696BD /* userLoginTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 043A12471CCCA871007696BD /* userLoginTests.m */; };
 		043A12531CCCA871007696BD /* userLoginUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 043A12521CCCA871007696BD /* userLoginUITests.m */; };
+		043A12641CCCB625007696BD /* User+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 043A12611CCCB625007696BD /* User+CoreDataProperties.m */; settings = {ASSET_TAGS = (); }; };
+		043A12651CCCB625007696BD /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 043A12631CCCB625007696BD /* User.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,10 @@
 		043A124E1CCCA871007696BD /* userLoginUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = userLoginUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		043A12521CCCA871007696BD /* userLoginUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = userLoginUITests.m; sourceTree = "<group>"; };
 		043A12541CCCA871007696BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		043A12601CCCB625007696BD /* User+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "User+CoreDataProperties.h"; path = "../User+CoreDataProperties.h"; sourceTree = "<group>"; };
+		043A12611CCCB625007696BD /* User+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "User+CoreDataProperties.m"; path = "../User+CoreDataProperties.m"; sourceTree = "<group>"; };
+		043A12621CCCB625007696BD /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = User.h; path = ../User.h; sourceTree = "<group>"; };
+		043A12631CCCB625007696BD /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = User.m; path = ../User.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +109,7 @@
 		043A12291CCCA870007696BD /* userLogin */ = {
 			isa = PBXGroup;
 			children = (
+				043A12661CCCB632007696BD /* Models */,
 				043A122D1CCCA870007696BD /* AppDelegate.h */,
 				043A122E1CCCA870007696BD /* AppDelegate.m */,
 				043A12301CCCA870007696BD /* ViewController.h */,
@@ -141,6 +148,17 @@
 				043A12541CCCA871007696BD /* Info.plist */,
 			);
 			path = userLoginUITests;
+			sourceTree = "<group>";
+		};
+		043A12661CCCB632007696BD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				043A12601CCCB625007696BD /* User+CoreDataProperties.h */,
+				043A12611CCCB625007696BD /* User+CoreDataProperties.m */,
+				043A12621CCCB625007696BD /* User.h */,
+				043A12631CCCB625007696BD /* User.m */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,7 +291,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				043A12641CCCB625007696BD /* User+CoreDataProperties.m in Sources */,
 				043A12321CCCA870007696BD /* ViewController.m in Sources */,
+				043A12651CCCB625007696BD /* User.m in Sources */,
 				043A122F1CCCA870007696BD /* AppDelegate.m in Sources */,
 				043A12381CCCA870007696BD /* userLogin.xcdatamodeld in Sources */,
 				043A122C1CCCA870007696BD /* main.m in Sources */,
@@ -500,6 +520,7 @@
 				043A12591CCCA871007696BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		043A125A1CCCA871007696BD /* Build configuration list for PBXNativeTarget "userLoginTests" */ = {
 			isa = XCConfigurationList;
@@ -508,6 +529,7 @@
 				043A125C1CCCA871007696BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		043A125D1CCCA871007696BD /* Build configuration list for PBXNativeTarget "userLoginUITests" */ = {
 			isa = XCConfigurationList;
@@ -516,6 +538,7 @@
 				043A125F1CCCA871007696BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
